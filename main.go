@@ -40,8 +40,6 @@ func (p *Program) eventloop(cmd chan Msg) {
 	}
 }
 
-type channelHandlers []chan struct{}
-
 func main() {
 	c := make(chan Msg)
 	done := make(chan bool)
